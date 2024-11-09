@@ -1,21 +1,119 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+
+.navbar{background-color: #C6A86B;height: 50px;}
+
+.areesh{ height: 300px; width: 100%;display: flex;justify-content: center;align-items: center;padding-top: 200px;}
+
+
+
+
+.product{margin:0 50px; padding: 35px 0;} 
+.productZoom{padding:50px 0px;margin-top: 100px; border-radius: 10px; border:1 px solid black; height: auto;background-color: yellow; height: 100px;position: relative;bottom: 0px;}  
+.productInfo{padding: 50px 50px;}
+
+.zoomSlider {  height: 120px; margin-top: 0px; padding-top: 10px;position: absolute;bottom: 0px;bottom: 0px;}
+
+.zoomSlider .slick-slide .item{ overflow: hidden;  border-radius: 10px;}
+.zoomSlider .slick-slide .item .carousel{ width: 100%; height:100px;}
+.zoomSlider .slick-slide {overflow: hidden; margin-right: 15px; border-radius: 10px; }
+
+.zoomSlider .slick-slide  {background-color: transparent; height: 100px;border: 1px solid gold;} 
+
+.zoomSlider .slick-arrow{ background-color: gold;  border-radius: 50%; size: 40px;}
+.zoomSlider .slick-arrow .slick-next{ top:50% !important; background-color: black; height: 35px;}
+.zoomSlider .slick-arrow .slick-prev{ top:50% !important; background-color: black; height: 35px;}
+.zoomSlider .slick-prev::before{background-color: goldenrod; border-radius: 50%;}
+.zoomSlider .slick-next::before{background-color: goldenrod; border-radius: 50%;}
+
+
+
+
+
+/*.zoomSlider.slick-arrow:before {
+	font-size: 60px;
+  
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+.addToCart{ width:100% ; height:auto;}
+.addToCart .counterSec{ width:100px ; height: 50px; padding:10px; margin-right: 20px; border-radius: 10px; border:1px solid gold !important; overflow:hidden;}
+.addToCart .counterSec input{ width:80px; height: 30px; display: flex; justify-content: center; align-items: center; border: 0px;outline:none;}
+
+.addToCart .CartButton{ width: 125px; height: 50px; margin-right:20px;border-radius:  10px; border: 1px solid gold;background-color:gold; font-weight: 400;color: black; display: flex; justify-content: center; align-items: center;}
+
+.addToCart .CartButton:hover{ width: 125px; height: 50px; border-radius: 10px; border: 1px solid gold;background-color: gold; font-weight: 400;color: black; display: flex; justify-content: center; align-items: center; cursor: pointer;}
+
+.addToCart .BuyNow{ width: 125px; height: 50px; margin-right:20px;border-radius:  10px; border: 1px solid gold;background-color:rgb(255, 78, 2); font-weight: 400;color: black; display: flex; justify-content: center; align-items: center;}
+
+
+.addToCart .liked{ height: 40px; width: 40px ; border-radius: 25px; border: 1px solid goldenrod;background-color: white;}
+.addToCart .liked:hover{background-color:red; cursor: pointer;}
+
+.detailsPage{margin: 0;}
+.container{background-color: white;  width:100%px;}
+.container .productZoom{background-color: white;}
+.customTabs ul li button{padding: 5px 15px !important; border-radius: 10px; border:none; background-color: #C6A86B !important; margin-right:20px;font-weight: 600;}
+
+.currentPrice{color: green;}
+.oldPrice{color:red; font-size: small;}
+
+
+
+
+.userVerified{background-color:#32de84; width: 100px; padding-left:5px ; display: flex; justify-content: center; align-items: center; border-radius: 15px;}
+.userVerified:hover{cursor: pointer; }
+
+
+.paymentOption{ background-color:#C6A86B; height: 60px; width: 60px; border-radius: 50%; margin-right: 30px; display: flex; justify-content: center;align-items: center;}
+.paymentOption:hover{cursor: pointer;}
+
+.location{display: flex;justify-content: center;align-items: center;}
+.name{display: flex;justify-content: center;align-items: center;}
+
+
+
+table.unstyledTable {
+  border: 1px solid #000000;
+  width: 100%;
+  height: 500px;
+}
+table.unstyledTable td, table.unstyledTable th {
+  border: 1px solid #AAAAAA;
+  padding: 5px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+
+
+
+table.unstyledTable thead {
+  
+  background:#C6A86B;
+}
+table.unstyledTable thead th {
+  font-weight: normal;
+  padding: 10px;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
+
+
+.reviewsCard{margin-bottom: 25px;}
+.reviewsCard .rounded-circle { width: 100px; height:100px;margin-right: 25px; display:  flex; align-items: center; justify-content: center; overflow: hidden;}
+.reviewsCard .rounded-circle  img{width: 100%; height: 100%; object-fit:cover; }
+.reviewsCard .review .date{ font-size:13px;margin-bottom: 5px;font-style: italic;}
+.reviewsCard .review .author{ font-weight: 500;}
+
+.reviewForm .form-group{margin-bottom: 25px;}
+.reviewForm .form-group .form-control{height: 35px;font-size: 15px;}
+.reviewForm .form-group textarea.form-control{height: 120px;}
+
+#sub{background-color: #C6A86B; font-size: 15px; height: 35px; width: 120px; font-weight: 500;}
